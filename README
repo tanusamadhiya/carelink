@@ -1,34 +1,54 @@
-/* ====================================================================
- * Copyright (c) 2015 Alpha Cephei Inc. All rights
- * reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in
- *    the documentation and/or other materials provided with the
- *    distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY ALPHA CEPHEI INC. ``AS IS'' AND.
- * ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,.
- * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ALPHA CEPHEI INC.
- * NOR ITS EMPLOYEES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT.
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,.
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY.
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT.
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE.
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * ====================================================================
- *
- */
+![Alt text](https://github.com/tanusamadhiya/ProjectcareLink/blob/main/banner_projec_careLink.png?raw=true "Banner Image")
 
-This directory contains generic US english acoustic model trained with
-latest sphinxtrain.
+## The Problem
+Rural healthcare faces major challenges: most villages have only **1–2 small health centres (PHCs)** and very few doctors. When serious cases arise, referrals to larger hospitals are slow and manual, relying on phone calls and paperwork. There’s **no visibility of hospital capacity or ambulance status**, causing critical delays and preventable emergencies.
+
+---
+
+## Introduction
+**CareLink** is a lightweight, multilingual web + mobile platform designed to build a **real-time rural health network**. It connects village health workers, PHCs, ambulances, and district hospitals on one platform, enabling:
+
+- **Digital patient referrals**
+- **Live ambulance tracking**
+- **Remote doctor consultations (teleconsultation)**
+
+This ensures faster coordination, reduces treatment delays, and saves lives.
+
+
+## Key Features
+
+### Smart Referral System
+- PHC or ASHA staff fill digital patient forms with symptoms and vitals.
+- Instantly alerts the nearest hospital.
+- Reduces paperwork and improves response times.
+
+### Ambulance Coordination
+- Live GPS tracking of ambulances.
+- Automatic ETA updates to receiving hospitals.
+- Enables better planning and faster emergency response.
+
+### Doctor-on-Call (Teleconsult)
+- Video consultation between PHC doctors and district hospital specialists.
+- Reduces unnecessary patient transfers.
+- Supports continuous care in remote areas.
+
+### Health Data Dashboard
+- Aggregated, anonymized case data for governments and NGOs.
+- Helps monitor disease trends and allocate resources.
+- Enables preventive interventions.
+
+### Offline & Multilingual Mode
+- Works in low-network zones using SMS sync and local caching.
+- Supports multiple languages for accessibility in rural regions.
+
+## Technology Overview
+| Layer      | Technologies |
+|-----------|--------------|
+| Frontend  | React.js / Flutter Web |
+| Backend   | Node.js + Express |
+| Database  | Firebase / MongoDB |
+| APIs      | Google Maps (ambulance tracking), Twilio / WebRTC (teleconsultation), Government Health APIs |
+| Auth      | Role-based Firebase Authentication (Health Worker, Hospital, Admin) |
+
+## Our Vision
+CareLink aims to reduce referral delays, improve rural healthcare coordination, and save critical time in emergencies. By creating a unified digital backbone for rural health, it empowers health workers, hospitals, and government agencies to provide better care, track resources, and prevent avoidable health crises.
