@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CareLink — Patient Referral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-row">
+      <h2>Patient Referral Form</h2>
+      <a class="link" href="index.html">← Home</a>
+    </div>
+
+    <form id="referralForm" class="stack">
+      <label>Patient Name
+        <input type="text" id="name" placeholder="e.g., Ramesh Kumar" required>
+      </label>
+
+      <label>Age
+        <input type="number" id="age" placeholder="e.g., 45" required min="0">
+      </label>
+
+      <label>Symptoms / Notes
+        <textarea id="symptoms" placeholder="Describe symptoms, vitals, urgency..." required></textarea>
+      </label>
+
+      <label>Suggested Receiving Hospital
+        <input type="text" id="hospital" placeholder="District Hospital" required>
+      </label>
+
+      <div class="actions">
+        <button type="submit" class="primary">Send Referral</button>
+        <button type="button" onclick="saveDraft()">Save Draft</button>
+      </div>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <hr>
+
+    <h3>Recent Sent Referrals</h3>
+    <div id="sentList" class="list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

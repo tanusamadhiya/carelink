@@ -1,0 +1,76 @@
+/* CareLink prototype styling — simple, clean, no images */
+
+:root{
+  --bg:#eaf9f0;
+  --card:#ffffff;
+  --primary:#2e9d58;
+  --primary-hover:#278a4a;
+  --muted:#6b7280;
+  --accent:#ffc107;
+  --shadow: 0 6px 18px rgba(32,41,50,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:92%;
+  max-width:760px;
+  margin:48px auto;
+  background:var(--card);
+  padding:20px 24px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.center{text-align:center}
+.brand{font-size:36px;margin:6px 0}
+.lead{color:var(--muted);margin:6px 0 18px}
+
+.roles{display:flex;justify-content:center;gap:12px;margin-top:8px}
+.role-btn{
+  padding:10px 16px;border-radius:8px;border:none;background:var(--primary);color:white;cursor:pointer;font-weight:600;
+}
+.role-btn:hover{background:var(--primary-hover)}
+
+.top-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.link{color:var(--muted);text-decoration:none;font-weight:600}
+.link:hover{text-decoration:underline}
+
+.stack label{display:block;margin-bottom:10px;font-weight:600;color:#374151}
+input[type="text"], input[type="number"], textarea{
+  width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px;font-size:14px;
+}
+textarea{min-height:96px;resize:vertical}
+
+.actions{display:flex;gap:10px;margin-top:10px}
+.primary{background:var(--primary);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+.primary:hover{background:var(--primary-hover)}
+
+.message{margin-top:12px;color:var(--primary);font-weight:700}
+.list{margin-top:8px;background:#fafafa;padding:10px;border-radius:8px;border:1px dashed #e6f2ea;min-height:36px}
+
+.tracker-card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.03);width:100%;max-width:640px}
+.map{height:180px;border-radius:8px;border:1px solid #e6e6e6;display:flex;align-items:center;justify-content:center;color:var(--muted);background:#fbfdfb;margin-top:12px}
+
+.note{color:var(--muted);font-size:13px;margin-top:10px}
+
+.video-box{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:12px}
+.video-sim{width:420px;height:200px;border-radius:8px;border:1px solid #ddd;display:flex;align-items:center;justify-content:center;background:#f7faf7;color:#374151;font-weight:700}
+.video-sim.small{width:180px;height:120px;font-size:13px}
+
+.consult-actions textarea{width:100%;min-height:80px;margin-top:12px;padding:10px;border-radius:8px;border:1px solid #eaeaea}
+.consult-actions{margin-top:12px}
+
+.stats{display:flex;gap:12px;justify-content:center;margin-top:8px}
+.stat{background:#fbfffb;padding:14px;border-radius:10px;width:150px;text-align:center;border:1px solid #e6f2ea}
+.stat-num{font-size:26px;font-weight:800;color:var(--primary)}
+.stat-label{font-size:13px;color:var(--muted);margin-top:6px}
+
+.footer-note{margin-top:18px;color:var(--muted);font-size:13px}

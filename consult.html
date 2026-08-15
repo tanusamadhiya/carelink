@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CareLink — Doctor Consult</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container center">
+    <div class="top-row">
+      <h2>Doctor On Call</h2>
+      <a class="link" href="index.html">← Home</a>
+    </div>
+
+    <p class="lead">Teleconsultation between PHC health worker and district doctor.</p>
+
+    <div class="video-box">
+      <div class="video-sim">Doctor (Remote)</div>
+      <div class="video-sim small">PHC (Local)</div>
+    </div>
+
+    <div class="consult-actions">
+      <textarea id="consultNotes" placeholder="Write quick notes or prescription suggestions..."></textarea>
+      <div>
+        <button onclick="startConsult()" class="primary">Start Consult (Mock)</button>
+        <button onclick="endConsult()">End</button>
+      </div>
+    </div>
+
+    <p id="consultMsg" class="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

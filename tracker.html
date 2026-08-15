@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CareLink — Ambulance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container center">
+    <div class="top-row">
+      <h2>Ambulance Tracker</h2>
+      <a class="link" href="index.html">← Home</a>
+    </div>
+
+    <div class="tracker-card">
+      <p><strong>Ambulance:</strong> <span id="ambId">A102</span></p>
+      <p><strong>Assigned To:</strong> <span id="ambHospital">District Hospital</span></p>
+      <p><strong>ETA:</strong> <span id="eta">--</span></p>
+
+      <div class="map">[ Map Placeholder — demo ]</div>
+
+      <div style="margin-top:12px;">
+        <button onclick="assignAmbulance()" class="primary">Assign Ambulance (Demo)</button>
+        <button onclick="resetAmbulance()">Reset</button>
+      </div>
+    </div>
+
+    <p class="note">Note: This is a mock tracker for demo. ETA counts down to simulate real tracking.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
